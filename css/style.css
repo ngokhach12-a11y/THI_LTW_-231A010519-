@@ -1,0 +1,83 @@
+/* --- CSS CHO ĐỀ SỐ 02 --- */
+
+/* Music Player Styles */
+.music-container {
+    background: linear-gradient(0deg, rgba(247,247,247,1) 0%, rgba(223,233,243,1) 100%);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 50px 20px; min-height: 100vh;
+}
+.player {
+    background-color: #fff; border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 350px; padding: 30px; text-align: center; margin-bottom: 30px;
+    position: relative; z-index: 10;
+}
+.img-container {
+    position: relative; width: 150px; height: 150px; margin: 0 auto;
+}
+.img-container img {
+    width: 100%; height: 100%; border-radius: 50%; object-fit: cover;
+    animation: rotate 10s linear infinite; animation-play-state: paused;
+}
+.player.play .img-container img { animation-play-state: running; }
+
+@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.player h2 { margin: 20px 0; font-size: 1.2rem; }
+
+/* Controls */
+.controls { display: flex; align-items: center; justify-content: center; width: 100%; margin-top: 20px; }
+.action-btn {
+    background-color: transparent; border: 0; color: #dfdbdf;
+    font-size: 20px; cursor: pointer; padding: 10px; margin: 0 10px;
+}
+.action-btn.big { color: #cdc2d0; font-size: 30px; }
+.action-btn:focus { outline: 0; }
+.action-btn.active { color: var(--primary-color); }
+
+/* Progress Bar */
+.progress-container {
+    background: #fff; border-radius: 5px; cursor: pointer; margin: 10px 0; height: 4px; width: 100%;
+    border: 1px solid #ddd;
+}
+.progress {
+    background-color: var(--primary-color); border-radius: 5px;
+    height: 100%; width: 0%; transition: width 0.1s linear;
+}
+
+/* Playlist */
+.playlist { width: 350px; background: white; border-radius: 10px; padding: 20px; }
+.playlist li {
+    list-style: none; padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;
+    display: flex; justify-content: space-between;
+}
+.playlist li:hover, .playlist li.active-song { background: #f0f0f0; color: var(--primary-color); font-weight: bold; }
+
+/* Visualizer (Cân bằng CSS) */
+.visualizer {
+    display: flex; justify-content: center; align-items: flex-end;
+    height: 30px; width: 100px; margin: 0 auto; position: absolute; bottom: -10px; left: 25px;
+}
+.bar {
+    width: 6px; margin: 0 2px; background: var(--primary-color);
+    animation: bounce 1s infinite ease-in-out;
+}
+@keyframes bounce { 0%, 100% { height: 5px; } 50% { height: 20px; } }
+
+/* About Page Extras */
+.avatar-filter {
+    width: 150px; height: 150px; border-radius: 50%; object-fit: cover;
+    filter: sepia(60%) hue-rotate(190deg) saturate(150%); /* Filter Effect */
+    transition: filter 0.5s;
+}
+.avatar-filter:hover { filter: none; }
+.hobbies ul { list-style-type: none; padding: 0; }
+.hobbies li {
+    background: #eee; margin: 5px; padding: 10px; display: inline-block;
+    border-radius: 20px; cursor: pointer; transition: 0.3s;
+}
+.hobbies li:hover { background: #ccc; }
+
+/* Quiz Styles (Cho Trang chủ) */
+.quiz-section { background: #fff; padding: 20px; margin-top: 30px; border-radius: 10px; }
+.result-box { font-weight: bold; margin-top: 10px; color: var(--primary-color); }
