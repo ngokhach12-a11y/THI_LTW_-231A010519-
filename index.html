@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Cao Lê Hữu Trí</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header glass-header" id="site-header">
+        <div class="logo">MY PORTFOLIO</div>
+        <nav class="navbar">
+            <a href="index.html" class="active">Trang chủ</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="bai01.html">Bài 01</a>
+            <a href="bai02.html">Bài 02</a>
+            <a href="bai03.html">Bài 03</a>
+        </nav>
+        <div class="hamburger">☰</div>
+    </header>
+
+    <main class="container">
+        <section class="profile-section">
+            <img src="images/avatar.jpg" alt="Avatar Sinh Vien" class="avatar">
+            <h1>Cao Lê Hữu Trí</h1>
+            <p>MSSV: 231A010519</p>
+            <p>Chào mừng thầy đến với bài thi số 02 của em.</p>
+        </section>
+
+        <section class="news-frame">
+            <h2>Tin tức mới</h2>
+            <iframe src="https://vi.wikipedia.org/wiki/Trang_Ch%C3%ADnh" width="100%" height="400px" style="border:1px solid #ddd; border-radius: 10px;"></iframe>
+        </section>
+
+        <section class="quiz-section" style="margin-top: 40px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+            <h2 style="color: var(--primary-color);">Kiểm Tra Kiến Thức</h2>
+            <form id="quizForm">
+                <p style="font-weight: 600; margin-bottom: 10px;">1. Thẻ nào dùng để tạo danh sách không thứ tự?</p>
+                <div style="margin-bottom: 20px;">
+                    <label style="cursor: pointer; margin-right: 20px;">
+                        <input type="radio" name="q1" value="sai"> &lt;ol&gt;
+                    </label>
+                    <label style="cursor: pointer;">
+                        <input type="radio" name="q1" value="dung"> &lt;ul&gt;
+                    </label>
+                </div>
+                
+                <button type="button" onclick="checkQuiz()" class="btn-cta">Nộp Bài</button>
+            </form>
+            <div id="quiz-result" class="result-box" style="margin-top: 15px; font-weight: bold; color: green;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cao Lê Hữu Trí.</p>
+        <a href="hosting_guide.txt" target="_blank" style="color: white; font-size: 0.9rem;">Hướng dẫn Hosting</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
