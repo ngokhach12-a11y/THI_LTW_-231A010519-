@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header glass-header">
+        <div class="logo">CONTACT</div>
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="bai03.html">Bài 03</a>
+        </nav>
+        <div class="hamburger">☰</div>
+    </header>
+
+    <main class="container">
+        <section class="contact-form-container">
+            <h2>Gửi tin nhắn</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label>Họ tên:</label>
+                    <input type="text" id="c-name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" id="c-email" required>
+                </div>
+                <div class="form-group">
+                    <label>Tin nhắn:</label>
+                    <textarea id="c-message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-cta">Gửi Liên Hệ</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="main-footer"></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
