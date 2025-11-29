@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header glass-header">
+        <div class="logo">ABOUT ME</div>
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="bai01.html">Bài 01</a>
+            <a href="bai02.html">Bài 02</a>
+            <a href="bai03.html">Bài 03</a>
+        </nav>
+        <div class="hamburger">☰</div>
+    </header>
+
+    <main class="container about-page" id="about-section">
+        <div class="profile-card">
+            <img src="images/avatar.jpg" alt="Avatar" class="avatar-filter">
+            <h1>Cao Lê Hữu Trí</h1>
+            <p>Ngày sinh: 01/01/2005</p>
+            <p>Sinh viên Lập trình Web</p>
+            
+            <div class="hobbies">
+                <h3>Sở thích (Click vào để xem điều kỳ diệu)</h3>
+                <ul id="hobby-list">
+                    <li data-desc="Tôi thích viết code thâu đêm!">Lập trình</li>
+                    <li data-desc="Âm nhạc giúp tôi thư giãn.">Nghe nhạc</li>
+                    <li data-desc="Khám phá những vùng đất mới.">Du lịch</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <h3>Video Yêu Thích</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/SjcCAa1qQPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <footer id="main-footer"></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
