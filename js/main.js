@@ -53,11 +53,20 @@ if (document.querySelector('.music-container')) {
     const cover = document.getElementById('cover');
     const playlistEl = document.getElementById('playlist-items');
     
-    // Mảng bài hát (Dùng link MP3 online)
+  // Mảng bài hát yêu thích của tôi
     const songs = [
-        { name: "Electronic Vibe", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
-        { name: "Jazz Comedy", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
-        { name: "Piano Moment", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" }
+        { 
+            name: "Nonstop Vinahouse 2025", 
+            src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" 
+        },
+        { 
+            name: "Remix Hot TikTok Trend", 
+            src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" 
+        },
+        { 
+            name: "Việt Mix Sôi Động", 
+            src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3" 
+        }
     ];
 
     let songIndex = 0;
